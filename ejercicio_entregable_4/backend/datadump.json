@@ -1,0 +1,367 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "administrador",
+        "permissions": [
+            [
+                "add_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "change_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "delete_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "view_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "add_recipe",
+                "recipe",
+                "recipe"
+            ],
+            [
+                "change_recipe",
+                "recipe",
+                "recipe"
+            ],
+            [
+                "delete_recipe",
+                "recipe",
+                "recipe"
+            ],
+            [
+                "view_recipe",
+                "recipe",
+                "recipe"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "trabajador",
+        "permissions": [
+            [
+                "add_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "change_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "view_ingredient",
+                "ingredient",
+                "ingredient"
+            ],
+            [
+                "add_recipe",
+                "recipe",
+                "recipe"
+            ],
+            [
+                "change_recipe",
+                "recipe",
+                "recipe"
+            ],
+            [
+                "view_recipe",
+                "recipe",
+                "recipe"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$u7xYgh3m73jSGZzE7SxMZk$gx+zsGSQms2NqycGxDm75qZVt/Xc/4wvJkR/5JXXVuQ=",
+        "last_login": "2023-06-20T18:17:57.414Z",
+        "is_superuser": true,
+        "username": "debora",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:37:40.970Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$8BFA0q2rb5jYDBvBl5XrqO$XVjYca9AEderFxItd9hqBiOac5tiFOpYSC4kDxoz7os=",
+        "last_login": "2023-06-20T18:32:20.041Z",
+        "is_superuser": false,
+        "username": "Maria_jefa",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:57:31Z",
+        "groups": [
+            [
+                "administrador"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$3bsy1fXtwkJuYbG8QTiABH$Q3wjmH/SXSqvV3Vi24jRLWeenJkoUWblqPWOV88XZgo=",
+        "last_login": "2023-06-20T18:28:28.162Z",
+        "is_superuser": false,
+        "username": "Jose_trabajador",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:59:10Z",
+        "groups": [
+            [
+                "trabajador"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g7q6pbvdtua01nq2fph60c5rmw1fps4c",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQRO9CHSHzMYiU6XMGtOwuwUkEkrErK3ePLblIminmvZlNRFiXEtfOc5xIXIUWl98uAb64HoCeUB9NYqvLPCV5KPKkXd4b8ft2un8HBXrZ1zmhSwmCGy2gYzbKBDJEmUfrEVUOqHngpBkwZKKgrHd7Oj-YPGQWny8mOzld:1qBg9M:ncwVJn7M75T5_hHYgHDV2wr0WIVSiujjXIOAQX2KpzU",
+        "expire_date": "2023-07-04T18:32:20.043Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "k6zefvdle5bpl584vz307tzg0v78eghp",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSGF4VFcuvcbyAxMpWogKe3K-O_apAvd3nPOfYmI21ri1nmJcxZnocTpdyNMD647yHestyZTq-syk9wVedAury3z83K4fwcFe_nW3oFHNwQaLFtQbAnCpMDr5E2C4InYotHBIFjKWVvQ4CGNboQJgyPx_gC_uTca:1qBfvR:8ggPC1nzb8s5_Tf7RPFVc_v0VA_Xxadu18oo9KRHQGA",
+        "expire_date": "2023-07-04T18:17:57.415Z"
+    }
+},
+{
+    "model": "recipe.recipe",
+    "pk": 5,
+    "fields": {
+        "title": "Ensalada de tomate y queso",
+        "steps": "Paso 1: Cortar el tomate y el queso, Paso 2: Poner en un plato todo mezclado, Paso 3: Aliñar con aceite y especias",
+        "ingredients": [
+            7,
+            8
+        ]
+    }
+},
+{
+    "model": "recipe.recipe",
+    "pk": 6,
+    "fields": {
+        "title": "Pizza de tomate y queso",
+        "steps": "Paso 1: Comprar una masa de pizza congelada, Paso 2: Poner primero el tomate por encima, Paso 3: Espolvorear el queso por encima, Paso 4: Introducir 20 minutos en el horno a 180 grados, Paso 5: Sacar del horno",
+        "ingredients": [
+            7,
+            8
+        ]
+    }
+},
+{
+    "model": "recipe.recipe",
+    "pk": 7,
+    "fields": {
+        "title": "Ensalada de patata y queso",
+        "steps": "Paso 1: Cortar las patatas y el queso, Paso 2: Poner en un plato todo mezclado, Paso 3: Aliñar con aceite y especias",
+        "ingredients": [
+            8,
+            9
+        ]
+    }
+},
+{
+    "model": "ingredient.ingredient",
+    "pk": 7,
+    "fields": {
+        "name": "Tomate",
+        "quantity": 100
+    }
+},
+{
+    "model": "ingredient.ingredient",
+    "pk": 8,
+    "fields": {
+        "name": "Queso",
+        "quantity": 50
+    }
+},
+{
+    "model": "ingredient.ingredient",
+    "pk": 9,
+    "fields": {
+        "name": "Patata",
+        "quantity": 300
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-06-20T17:53:44.108Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "administrador",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-06-20T17:54:40.906Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "2",
+        "object_repr": "trabajador",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-06-20T17:57:31.212Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Maria_jefa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-06-20T17:58:25.242Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Maria_jefa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-06-20T17:59:10.421Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Jose_trabajador",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-06-20T17:59:16.725Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Jose_trabajador",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-06-20T18:20:17.354Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Jose_trabajador",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-06-20T18:20:22.146Z",
+        "user": [
+            "debora"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Maria_jefa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+}
+]

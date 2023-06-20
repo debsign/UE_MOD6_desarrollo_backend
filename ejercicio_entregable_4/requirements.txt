@@ -1,0 +1,5 @@
+pandas
+django
+requests
+djangorestframework
+mysqlclient
